@@ -31,12 +31,7 @@ export default function Nav({ active }: { active?: ActivePage }) {
             >
               Door Locks
             </a>
-            {/* <a
-              href="/gallery"
-              className={active === "gallery" ? "active" : undefined}
-            >
-              Gallery
-            </a> */}
+           
             <a
               href="/our-story"
               className={active === "about" ? "active" : undefined}
