@@ -1,0 +1,36 @@
+import type { Metadata } from "next";
+import VendorScripts from "@/components/VendorScripts";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "WoodLand - Doors Redefined | PET, PPH & CCP Door Solutions",
+  description:
+    "Water-resistant, termite-proof PET, PPH & CCP doors — plus complete lock solutions — for modern Pakistani homes and businesses.",
+};
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang="en">
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Inter:wght@300;400;500&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body>
+        {/* Loads GSAP/ScrollTrigger/Lenis + main.js, and reliably tells
+            main.js once the vendor libraries have actually finished
+            loading (see components/VendorScripts.tsx) */}
+        <VendorScripts />
+
+        {children}
+      </body>
+    </html>
+  );
+}
+

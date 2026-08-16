@@ -1,0 +1,75 @@
+/* Styles for /products/[slug] — the individual product detail page.
+   Not linked from the nav; only reached by clicking a product card on
+   /collections or the homepage's "Best-Selling Doors" section. Built to
+   match the rest of the site's existing design tokens/classes rather
+   than introducing a new visual language. */
+
+.product-back{
+    display:inline-flex; align-items:center; gap:10px; font-size:11px; text-transform:uppercase;
+    letter-spacing:.18em; color:var(--ivory-dim); margin-bottom:40px; transition:.3s var(--ease);
+}
+.product-back:hover{ color:var(--brass-deep); }
+.product-back::before{ content:'←'; }
+
+.product-layout{
+    display:grid; grid-template-columns:1fr 1fr; gap:90px; align-items:start;
+}
+.product-gallery{
+    position:relative; aspect-ratio:4/5; overflow:hidden; background:var(--panel);
+    box-shadow:var(--shadow); clip-path:inset(100% 0 0 0);
+}
+.product-gallery img{ width:100%; height:100%; object-fit:cover; transform:scale(1.25); }
+
+.product-info .tag{
+    font-size:11px; letter-spacing:.15em; text-transform:uppercase; color:var(--brass);
+    display:inline-block; margin-bottom:18px;
+}
+.product-info h1{ font-size:clamp(36px,4.5vw,56px); margin-bottom:10px; }
+.product-info .material-full{ color:var(--ivory-dim); font-size:16px; margin-bottom:34px; }
+
+.product-specs{
+    display:grid; grid-template-columns:1fr 1fr; gap:24px 30px; padding:30px 0;
+    border-top:1px solid var(--line); border-bottom:1px solid var(--line); margin-bottom:34px;
+}
+.product-specs .spec-item h5{
+    font-size:11px; text-transform:uppercase; letter-spacing:.18em; color:var(--ivory-dim); margin-bottom:8px;
+}
+.product-specs .spec-item p{ font-size:18px; font-family:'Fraunces',serif; }
+
+.product-features{ margin-bottom:40px; }
+.product-features h5{
+    font-size:11px; text-transform:uppercase; letter-spacing:.18em; color:var(--ivory-dim); margin-bottom:18px;
+}
+.product-features ul{ list-style:none; padding:0; margin:0; }
+.product-features li{
+    font-size:16px; color:var(--ivory); padding:14px 0; border-bottom:1px solid var(--line);
+    display:flex; gap:16px; align-items:baseline;
+}
+.product-features li:last-child{ border-bottom:none; }
+.product-features li::before{ content:'—'; color:var(--brass); flex-shrink:0; }
+
+.product-cta-row{ display:flex; align-items:center; gap:28px; flex-wrap:wrap; }
+
+.product-note{
+    margin-top:60px; padding:22px 26px; background:var(--bg-soft); border-left:2px solid var(--brass);
+    font-size:13px; color:var(--ivory-dim); line-height:1.7;
+}
+
+/* ---- Related products ---- */
+.related-heading{ text-align:center; margin-bottom:60px; }
+.related-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:36px; }
+.related-card{ display:block; }
+.related-img{
+    aspect-ratio:4/5; overflow:hidden; background:var(--panel); box-shadow:var(--shadow-sm);
+    clip-path:inset(100% 0 0 0); margin-bottom:20px;
+}
+.related-img img{ width:100%; height:100%; object-fit:cover; transform:scale(1.25); transition:.6s var(--ease); }
+.related-card:hover .related-img img{ transform:scale(1.1); }
+.related-card h4{ font-size:19px; margin-bottom:4px; }
+.related-card span{ font-size:11px; letter-spacing:.15em; text-transform:uppercase; color:var(--brass); }
+
+@media (max-width:1024px){
+    .product-layout{ grid-template-columns:1fr; gap:50px; }
+    .product-specs{ grid-template-columns:1fr 1fr; }
+    .related-grid{ grid-template-columns:1fr; }
+}
