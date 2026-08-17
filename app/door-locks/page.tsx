@@ -30,7 +30,7 @@ export default function DoorLocksPage() {
           </h1>
           <p className="kicker">
             A door is only as secure as what closes it. We supply and fit
-            locking hardware matched to every WoodLand door — and most
+            locking hardware matched to every WoodLand door and most
             existing ones too.
           </p>
         </div>
@@ -51,7 +51,7 @@ export default function DoorLocksPage() {
                 <h3 className="serif">Mortise &amp; Cylindrical Locksets</h3>
                 <p>
                   Heavy-duty mortise and cylindrical locks for entrance,
-                  bedroom, and commercial doors — supplied in a range of
+                  bedroom, and commercial doors supplied in a range of
                   finishes to match your hardware.
                 </p>
               </div>
@@ -83,7 +83,7 @@ export default function DoorLocksPage() {
                 <span className="tag">Hardware</span>
                 <h3 className="serif">Handles, Hinges &amp; Closers</h3>
                 <p>
-                  Matched handle sets, heavy-duty hinges, and door closers —
+                  Matched handle sets, heavy-duty hinges, and door closers
                   finished to complement your chosen door panel.
                 </p>
               </div>
@@ -100,7 +100,7 @@ export default function DoorLocksPage() {
                 <h3 className="serif">Installation &amp; Maintenance</h3>
                 <p>
                   On-site fitting by our own technicians, plus after-sales
-                  repair and replacement — for both new WoodLand doors and
+                  repair and replacement for both new WoodLand doors and
                   existing ones.
                 </p>
               </div>
@@ -123,7 +123,7 @@ export default function DoorLocksPage() {
             <div className="process-step">
               <h4>Consultation</h4>
               <p>
-                Tell us your door type and security needs — we recommend the
+                Tell us your door type and security needs. We recommend the
                 right lock system.
               </p>
             </div>
@@ -172,7 +172,7 @@ export default function DoorLocksPage() {
                 }}
               >
                 Buying your door and lock from the same place means the
-                hardware is pre-matched to the panel thickness and frame — no
+                hardware is pre-matched to the panel thickness and frame, no
                 last-minute compatibility issues on install day.
               </p>
               <p

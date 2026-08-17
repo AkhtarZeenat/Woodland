@@ -27,7 +27,7 @@ export default function ContactPage() {
           <h1 className="serif">Get a Quote.</h1>
           <p className="kicker">
             Tell us the opening size, material preference, and whether you
-            need locks fitted too — we&apos;ll follow up within one business
+            need locks fitted too we&apos;ll follow up within one business
             day.
           </p>
         </div>

@@ -34,7 +34,7 @@ export default function OurStoryPage() {
           </h1>
 
           <p className="kicker">
-            Timeless design, reliable quality, and lasting durability —
+            Timeless design, reliable quality, and lasting durability
             engineered for modern living.
           </p>
         </div>
@@ -56,7 +56,7 @@ export default function OurStoryPage() {
               </span>
 
               <h2 className="serif story-title">
-                Doors that don&apos;t just connect spaces — they define them.
+                Doors that don&apos;t just connect spaces they define them.
               </h2>
 
               <p>
@@ -77,7 +77,7 @@ export default function OurStoryPage() {
               <p>
                 With a commitment to quality craftsmanship and attention to
                 detail, WoodLand is dedicated to creating doors that
-                don&apos;t just connect spaces — they define them.
+                don&apos;t just connect spaces they define them.
               </p>
             </div>
 
@@ -124,8 +124,8 @@ export default function OurStoryPage() {
           </h2>
 
           <p>
-            Instead of relying on solid timber — which swells, cracks, and
-            needs repainting — every WoodLand door is built from engineered
+            Instead of relying on solid timber which swells, cracks, and
+            needs repainting every WoodLand door is built from engineered
             PET, PPH, or CCP panels, sealed against moisture from the core
             out.
           </p>
@@ -144,7 +144,7 @@ export default function OurStoryPage() {
               <h4>PET</h4>
 
               <p>
-                Sealed core for wet areas — bathrooms, kitchens, utility
+                Sealed core for wet areas bathrooms, kitchens, utility
                 doors.
               </p>
             </div>
@@ -206,7 +206,7 @@ export default function OurStoryPage() {
 
               <p>
                 No polish, no paint, no annual touch-ups. Every WoodLand door
-                is finished to stay finished — water resistant, scratch
+                is finished to stay finished water resistant, scratch
                 resistant, termite proof, from the day it&apos;s fitted.
               </p>
             </div>
@@ -228,7 +228,7 @@ export default function OurStoryPage() {
 
               <p>
                 Engineered panels don&apos;t have the natural variance of
-                timber — what you approve in the showroom is exactly what
+                timber what you approve in the showroom is exactly what
                 arrives on-site, every single time.
               </p>
             </div>
@@ -250,7 +250,7 @@ export default function OurStoryPage() {
 
               <p>
                 From the panel to the lock, we supply and fit the hardware
-                that finishes the job — mortise sets, smart locks, handles,
+                that finishes the job mortise sets, smart locks, handles,
                 and hinges, matched and installed.
               </p>
             </div>

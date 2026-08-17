@@ -42,7 +42,7 @@ export default function HomePage() {
         </div>
         <div className="hero-right">
           <div className="door-backdrop">
-            <img src="/homepage.png" alt="Modern entrance" />
+            <img src="/hero.png" alt="Modern entrance" />
           </div>
           <div className="door-stage" id="doorStage">
             <div className="door-leaf left">
@@ -53,8 +53,8 @@ export default function HomePage() {
             </div>
           </div>
           <div className="hero-right-tag" id="heroTag">
-            <div className="code">ZF-6813</div>
-            <div className="name serif">Crystal Carbon Panel</div>
+            <div className="code">26H1-13-LB311</div>
+            <div className="name serif">Polypropylene Homopolymer</div>
           </div>
         </div>
       </section>
@@ -263,7 +263,7 @@ export default function HomePage() {
 
         <p>
           What you approve in the showroom is what arrives
-          on-site — with consistent colour, texture, and finish.
+          on-site with consistent colour, texture, and finish.
         </p>
       </div>
 
