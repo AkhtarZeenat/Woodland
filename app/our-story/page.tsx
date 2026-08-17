@@ -14,11 +14,7 @@ export default function OurStoryPage() {
 
       <Nav active="about" />
 
-      {/* =========================
-          HERO
-      ========================= */}
-
-      <section className="page-hero">
+      <section className="page-hero story-hero">
         <div className="page-hero-bg">
           <img
             src="https://images.unsplash.com/photo-1605883705077-8d3d3cebe78c?q=80&w=1800"
@@ -26,8 +22,10 @@ export default function OurStoryPage() {
           />
         </div>
 
-        <div className="container">
-          <span className="eyebrow">About WoodLand</span>
+        <div className="container story-hero-content">
+          <span className="eyebrow">
+            About WoodLand
+          </span>
 
           <h1 className="serif">
             A door is the first
@@ -42,30 +40,33 @@ export default function OurStoryPage() {
         </div>
       </section>
 
-      {/* =========================
-          OUR BELIEF / STORY
-      ========================= */}
-
-      <section className="section">
+      <section className="section story-section">
         <div className="container">
+
           <div className="story-layout">
-            {/* Content */}
 
-            <div data-reveal>
-              <span className="eyebrow">Our Belief</span>
+            {/* TEXT */}
 
-              <h2 className="serif story-heading">
+            <div
+              className="story-copy"
+              data-reveal
+            >
+              <span className="eyebrow">
+                Our Belief
+              </span>
+
+              <h2 className="serif story-title">
                 Doors that don&apos;t just connect spaces — they define them.
               </h2>
 
-              <p className="story-text">
+              <p>
                 At WoodLand, we believe a door is more than just an entrance.
                 It&apos;s the first impression of a space. That&apos;s why we
                 create doors that combine timeless design, reliable quality,
                 and lasting durability.
               </p>
 
-              <p className="story-text">
+              <p>
                 Every WoodLand door is thoughtfully crafted to complement
                 modern living, offering the perfect balance of style,
                 strength, and functionality. From contemporary interiors to
@@ -73,31 +74,33 @@ export default function OurStoryPage() {
                 every environment with confidence and sophistication.
               </p>
 
-              <p className="story-text">
+              <p>
                 With a commitment to quality craftsmanship and attention to
                 detail, WoodLand is dedicated to creating doors that
                 don&apos;t just connect spaces — they define them.
               </p>
             </div>
 
-            {/* Image */}
+            {/* IMAGE */}
 
-            <div className="story-img img-reveal">
+            <div
+              className="story-img img-reveal"
+              data-reveal
+            >
               <img
                 src="/5.jpeg"
                 alt="WoodLand door"
               />
             </div>
+
           </div>
+
         </div>
       </section>
 
-      {/* =========================
-          ENGINEERED MATERIALS
-      ========================= */}
-
       <section className="split">
-        {/* Image */}
+
+        {/* IMAGE */}
 
         <div className="split-img img-reveal">
           <img
@@ -106,19 +109,25 @@ export default function OurStoryPage() {
           />
         </div>
 
-        {/* Content */}
+        {/* CONTENT */}
 
-        <div className="split-text" data-reveal>
-          <span className="eyebrow">Engineered, Not Grown</span>
+        <div
+          className="split-text"
+          data-reveal
+        >
+          <span className="eyebrow">
+            Engineered, Not Grown
+          </span>
 
-          <h2 className="serif split-heading">
+          <h2 className="serif split-title">
             Built to outlast the elements.
           </h2>
 
           <p>
             Instead of relying on solid timber — which swells, cracks, and
             needs repainting — every WoodLand door is built from engineered
-            PET, PPH, or CCP panels, sealed against moisture from the core out.
+            PET, PPH, or CCP panels, sealed against moisture from the core
+            out.
           </p>
 
           <p>
@@ -127,9 +136,10 @@ export default function OurStoryPage() {
             monsoon seasons.
           </p>
 
-          {/* Materials */}
+          {/* MATERIALS */}
 
           <div className="mat-row">
+
             <div className="mat-box">
               <h4>PET</h4>
 
@@ -155,39 +165,31 @@ export default function OurStoryPage() {
                 natural wood.
               </p>
             </div>
+
           </div>
         </div>
+
       </section>
 
-      {/* =========================
-          VALUES
-      ========================= */}
-
-      <section className="section">
+      <section className="section values-section">
         <div className="container">
 
-          {/* Section Heading */}
-
-          <div className="values-heading">
-            <span
-              className="eyebrow"
-              style={{
-                justifyContent: "center",
-              }}
-            >
+          <div
+            className="values-heading"
+            data-reveal
+          >
+            <span className="eyebrow">
               What We Hold To
             </span>
 
-            <h2 className="serif values-title">
+            <h2 className="serif">
               Three working principles
             </h2>
           </div>
 
-          {/* Value Cards */}
-
           <div className="values">
 
-            {/* Value 1 */}
+            {/* DURABILITY */}
 
             <div
               className="value-card"
@@ -209,7 +211,7 @@ export default function OurStoryPage() {
               </p>
             </div>
 
-            {/* Value 2 */}
+            {/* CONSISTENCY */}
 
             <div
               className="value-card"
@@ -231,7 +233,7 @@ export default function OurStoryPage() {
               </p>
             </div>
 
-            {/* Value 3 */}
+            {/* COMPLETION */}
 
             <div
               className="value-card"
@@ -254,6 +256,7 @@ export default function OurStoryPage() {
             </div>
 
           </div>
+
         </div>
       </section>
 

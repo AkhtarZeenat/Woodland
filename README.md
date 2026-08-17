@@ -90,8 +90,8 @@ Duplicate inline `<script>` blocks that used to live at the bottom of the homepa
 - `gallery.html`'s footer originally omitted the "Showroom" link that other pages have — preserved as-is (`Footer.tsx`'s `showShowroomLink` prop).
 
 ## What had to change (framework requirements, not design)
-
-- `class` → `className`, `for` → `htmlFor`, inline `style="..."` strings → JS style objects.
+f
+- `class` → `className`, `or` → `htmlFor`, inline `style="..."` strings → JS style objects.
 - Internal links now point to Next.js routes (`/`, `/collections`, etc.) instead of `.html` files.
 - Navigation uses plain `<a href>` (not `<Link>`) so every page does a full load — same animation re-init behavior as the original static site.
 - Images are plain `<img>` tags (not `next/image`), so sizing/behavior is unchanged from the original.
