@@ -63,7 +63,7 @@ export default function Nav({ active }: { active?: ActivePage }) {
         <a href="/">Home</a>
         <a href="/collections">Doors</a>
         <a href="/door-locks">Door Locks</a>
-        <a href="/gallery">Gallery</a>
+        {/* <a href="/gallery">Gallery</a> */}
         <a href="/our-story">About</a>
         <a href="/contact">Contact</a>
       </div>
