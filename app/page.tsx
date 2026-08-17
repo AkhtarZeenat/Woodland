@@ -114,54 +114,162 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section" style={{ paddingTop: 0 }}>
-        <div className="container">
-          <div style={{ textAlign: "center", marginBottom: "70px" }}>
-            <span className="eyebrow" style={{ justifyContent: "center" }}>
-              Why WoodLand
-            </span>
-            <h2 className="serif" style={{ fontSize: "50px" }}>
-              Built for how doors actually get used
-            </h2>
-          </div>
-          <div className="bento" data-reveal>
-            <div className="bento-card wide brass">
-              <div className="n">01</div>
-              <h4 className="serif">No polish. No paint. Ever.</h4>
-              <p>
-                The finish is sealed into the panel not painted on so
-                there&apos;s nothing to redo, ever.
-              </p>
-            </div>
-            <div className="bento-card tall">
-              <div className="n">02</div>
-              <h4 className="serif">Fully water resistant</h4>
-              <p>
-                Fit them in bathrooms, kitchens, and balconies without a
-                second thought.
-              </p>
-            </div>
-            <div className="bento-card">
-              <div className="n">03</div>
-              <h4 className="serif">Termite proof</h4>
-              <p>No timber core means nothing for pests to eat.</p>
-            </div>
-            <div className="bento-card">
-              <div className="n">04</div>
-              <h4 className="serif">Scratch resistant</h4>
-              <p>Holds up to daily knocks, keys, and pets.</p>
-            </div>
-            <div className="bento-card wide">
-              <div className="n">05</div>
-              <h4 className="serif">Won&apos;t warp with the weather</h4>
-              <p>
-                Stable across Pakistan&apos;s heat, humidity, and monsoon
-                swings closes true, every season.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+    <section className="section" style={{ paddingTop: 0 }}>
+  <div className="container">
+
+    <div
+      style={{
+        textAlign: "center",
+        marginBottom: "70px",
+      }}
+    >
+      <span
+        className="eyebrow"
+        style={{
+          justifyContent: "center",
+        }}
+      >
+        Why WoodLand
+      </span>
+
+      <h2
+        className="serif"
+        style={{
+          fontSize: "50px",
+        }}
+      >
+        Built for how doors actually get used
+      </h2>
+    </div>
+
+    <div className="bento" data-reveal>
+
+      {/* 01 */}
+      <div className="bento-card wide brass">
+        <div className="n">01</div>
+
+        <h4 className="serif">
+          No polish. No paint. Ever.
+        </h4>
+
+        <p>
+          The finish is sealed into the panel, not painted on
+          so there&apos;s nothing to redo, ever.
+        </p>
+      </div>
+
+
+      {/* 02 - TALL CARD */}
+      <div className="bento-card tall water-card">
+        {/* <div className="bento-mini-visual">
+          <span className="water-drop">💧</span>
+        </div> */}
+
+        <div className="n">02</div>
+
+        <h4 className="serif">
+          Fully water resistant
+        </h4>
+
+        <p>
+          Fit them in bathrooms, kitchens, and balconies without
+          a second thought.
+          
+        </p>
+      </div>
+
+
+      {/* 03 */}
+      <div className="bento-card">
+        <div className="n">03</div>
+
+        <h4 className="serif">
+          Termite proof
+        </h4>
+
+        <p>
+          No timber core means nothing for pests to eat.
+        </p>
+      </div>
+
+
+      {/* 04 */}
+      <div className="bento-card">
+        <div className="n">04</div>
+
+        <h4 className="serif">
+          Zero maintenance
+        </h4>
+
+        <p>
+          No sanding, repainting, polishing, or yearly
+          touch-ups required.
+        </p>
+      </div>
+
+
+      {/* 05 */}
+      <div className="bento-card " >
+        <div className="n">05</div>
+
+        <h4 className="serif">
+          Built for everyday living
+        </h4>
+
+        <p>
+          Designed to handle busy homes, offices, children,
+          pets, and daily use.
+        </p>
+      </div>
+
+
+      {/* 06 */}
+      <div className="bento-card">
+        <div className="n">06</div>
+
+        <h4 className="serif">
+          Scratch resistant
+        </h4>
+
+        <p>
+          Holds up to daily knocks, keys, and pets while
+          keeping its refined finish.
+        </p>
+      </div>
+
+
+      {/* 07 */}
+      <div className="bento-card wide">
+        <div className="n">07</div>
+
+        <h4 className="serif">
+          Won&apos;t warp with the weather
+        </h4>
+
+        <p>
+          Stable across Pakistan&apos;s heat, humidity, and
+          monsoon swings — closes true, every season.
+        </p>
+      </div>
+
+
+      {/* 08 */}
+      <div className="bento-card wide">
+        <div className="n">08</div>
+
+        <h4 className="serif">
+          Consistent finish, every time
+        </h4>
+
+        <p>
+          What you approve in the showroom is what arrives
+          on-site — with consistent colour, texture, and finish.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
 
       <section className="section">
         <div className="container">

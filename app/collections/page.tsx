@@ -15,10 +15,6 @@ export default function CollectionsPage() {
 
       <Nav active="doors" />
 
-      {/* =========================
-          HERO
-      ========================= */}
-
       <section className="page-hero collections-hero">
         <div className="page-hero-bg">
           <img
@@ -43,16 +39,8 @@ export default function CollectionsPage() {
         </div>
       </section>
 
-      {/* =========================
-          COLLECTION
-      ========================= */}
-
       <section className="section collections-section">
         <div className="container">
-
-          {/* =========================
-              FILTERS
-          ========================= */}
 
           <div
             className="filters"
@@ -86,11 +74,6 @@ export default function CollectionsPage() {
               CCP
             </div>
           </div>
-
-          {/* =========================
-              DOOR CATALOGUE
-          ========================= */}
-
           <div className="cat-grid">
             {products.map((p) => (
               <a
@@ -140,11 +123,6 @@ export default function CollectionsPage() {
               </a>
             ))}
           </div>
-
-          {/* =========================
-              PRODUCT SPECIFICATIONS
-          ========================= */}
-
           <div
             className="spec-band"
             data-reveal
@@ -199,10 +177,6 @@ export default function CollectionsPage() {
               </p>
             </div>
           </div>
-
-          {/* =========================
-              CUSTOM SIZE CTA
-          ========================= */}
 
           <div
             className="catalogue-cta"
