@@ -358,7 +358,7 @@ export default function HomePage() {
               </div>
             </a>
             <a href={`/products/${featured[2].slug}`} className="feat-card c3" data-tilt>
-              <div className="feat-img img-reveal" style={{ aspectRatio: "1" }}>
+              <div className="feat-img img-reveal" style={{ aspectRatio: "0.5" }}>
                 <img
                   src={featured[2].image}
                   alt={`${featured[2].code} ${featured[2].materialLong} door`}
