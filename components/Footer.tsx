@@ -34,14 +34,14 @@ export default function Footer({
           <div className="footer-col">
             <h5>Information</h5>
             <a href="/our-story">About WoodLand</a>
-            <a href="/gallery">Gallery</a>
+            {/* <a href="/gallery">Gallery</a> */}
             {showShowroomLink && <a href="/contact">Showroom</a>}
             <a href="/contact">Contact</a>
           </div>
           <div className="footer-col">
             <h5>Connect</h5>
             <a href="#">Instagram</a>
-            <a href="#">LinkedIn</a>
+            <a href="https://www.facebook.com/people/Woodland-Doors/61592541773902/">Facebook</a>
             <a href="/contact">Email Us</a>
           </div>
         </div>

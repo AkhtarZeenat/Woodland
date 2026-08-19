@@ -40,9 +40,9 @@ export default function ContactPage() {
               <div className="info-block">
                 <h5>Showroom</h5>
                 <p>
-                  Plot 14, Industrial Triangle,
+                  Opposit Gate No.4 - DHA Phase 2, GT Road,
                   <br />
-                  Rawalpindi, Punjab, Pakistan
+                  Islamabad, Pakistan
                 </p>
               </div>
               <div className="info-block">
@@ -53,7 +53,7 @@ export default function ContactPage() {
               <div className="info-block">
                 <h5>Hours</h5>
                 <p>
-                  Monday – Saturday, 10am – 7pm
+                  Monday - Saturday, 10am - 7pm
                   <br />
                   Site visits available on request
                 </p>
@@ -61,7 +61,7 @@ export default function ContactPage() {
               <div className="info-block">
                 <h5>Follow</h5>
                 <a href="#">Instagram</a>
-                <a href="#">LinkedIn</a>
+                <a href="#">Facebook</a>
               </div>
             </div>
 

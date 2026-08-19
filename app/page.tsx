@@ -83,7 +83,7 @@ export default function HomePage() {
           <div className="story-layout">
             <div className="story-img img-reveal">
               <img
-                src="/4.jpeg"
+                src="/1.jpeg"
                 alt="WoodLand door detail"
               />
             </div>
