@@ -1,7 +1,7 @@
 import Loader from "@/components/Loader";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-import { products } from "@/lib/products";
+import CollectionProducts from "@/components/CollectionProducts";
 import "./collections.css";
 
 export const metadata = {
@@ -15,6 +15,7 @@ export default function CollectionsPage() {
 
       <Nav active="doors" />
 
+      {/* HERO */}
       <section className="page-hero collections-hero">
         <div className="page-hero-bg">
           <img
@@ -39,90 +40,14 @@ export default function CollectionsPage() {
         </div>
       </section>
 
+      {/* COLLECTIONS */}
       <section className="section collections-section">
         <div className="container">
 
-          <div
-            className="filters"
-            data-reveal
-          >
-            <div
-              className="filter-pill active"
-              data-filter="all"
-            >
-              All Doors
-            </div>
+          {/* FILTERS + PRODUCTS */}
+          <CollectionProducts />
 
-            <div
-              className="filter-pill"
-              data-filter="pet"
-            >
-              PET
-            </div>
-
-            <div
-              className="filter-pill"
-              data-filter="pph"
-            >
-              PPH
-            </div>
-
-            <div
-              className="filter-pill"
-              data-filter="ccp"
-            >
-              CCP
-            </div>
-          </div>
-          <div className="cat-grid">
-            {products.map((p) => (
-              <a
-                key={p.slug}
-                href={`/products/${p.slug}`}
-                className="cat-item"
-                data-cat={p.category}
-              >
-                {/* Door Image */}
-
-                <div
-                  className="img-reveal cat-image"
-                >
-                  <img
-                    src={p.image}
-                    alt={`${p.code} door`}
-                  />
-                </div>
-
-                {/* Product Info */}
-
-                <div className="item-info">
-                  <h3 className="serif">
-                    {p.code}
-                  </h3>
-
-                  <span>
-                    {p.materialShort}
-                  </span>
-                </div>
-
-                {/* Size */}
-
-                <div className="item-size">
-                  {p.size} · NW {p.nw}
-                </div>
-
-                {/* Features */}
-
-                <div className="item-feats">
-                  {p.features.slice(0, 2).map((feature) => (
-                    <span key={feature}>
-                      {feature}
-                    </span>
-                  ))}
-                </div>
-              </a>
-            ))}
-          </div>
+          {/* SPECIFICATIONS */}
           <div
             className="spec-band"
             data-reveal
@@ -178,6 +103,7 @@ export default function CollectionsPage() {
             </div>
           </div>
 
+          {/* CTA */}
           <div
             className="catalogue-cta"
             data-reveal

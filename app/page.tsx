@@ -160,7 +160,7 @@ export default function HomePage() {
 
 
       {/* 02 - TALL CARD */}
-      <div className="bento-card tall water-card">
+      <div className="bento-card tall water-card brass">
         {/* <div className="bento-mini-visual">
           <span className="water-drop">💧</span>
         </div> */}
