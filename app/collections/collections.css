@@ -92,15 +92,25 @@
 /* =========================
    PRODUCT IMAGE
 ========================= */
-
 .cat-image {
   position: relative;
   width: 100%;
   aspect-ratio: 4 / 5;
   overflow: hidden;
   background: var(--panel);
-  clip-path: inset(100% 0 0 0);
   box-shadow: var(--shadow);
+
+  animation: catalogueReveal 0.9s var(--ease) both;
+}
+
+@keyframes catalogueReveal {
+  from {
+    clip-path: inset(100% 0 0 0);
+  }
+
+  to {
+    clip-path: inset(0 0 0 0);
+  }
 }
 
 .cat-image img {
