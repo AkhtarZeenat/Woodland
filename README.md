@@ -27,7 +27,6 @@ The contact form needs a database connected to actually save submissions — see
 | About / Our Story    | `/our-story`       |
 | Collections (Doors)  | `/collections`     |
 | Door Locks           | `/door-locks`      |
-| Gallery              | `/gallery`         |
 | Contact              | `/contact`         |
 | **Product detail**   | `/products/[slug]` — e.g. `/products/zf-6813`. **Not in the nav** — only reachable by clicking a product card on `/collections` or the homepage's "Best-Selling Doors" section. |
 
