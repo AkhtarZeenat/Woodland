@@ -81,7 +81,7 @@ export default function HomePage() {
       <section className="section" id="story">
         <div className="container">
           <div className="story-layout">
-            <div className="story-img img-reveal">
+            <div className="story-img img-reveal" style={{ aspectRatio: "4/4" }}>
               <img
                 src="/1.jpeg"
                 alt="WoodLand door detail"
