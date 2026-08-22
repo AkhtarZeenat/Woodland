@@ -74,7 +74,7 @@ export default function HomePage() {
 
           <a
             href={waLink(
-              "Hi WoodLand! Here is my door size — please send me a quotation."
+              "Hi WoodLand! Here is my door size. Please send me a quotation."
             )}
             target="_blank"
             rel="noopener noreferrer"
