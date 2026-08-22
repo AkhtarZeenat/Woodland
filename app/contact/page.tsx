@@ -2,6 +2,7 @@ import Loader from "@/components/Loader";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import ContactForm from "@/components/ContactForm";
+import { SITE, waLink } from "@/lib/site";
 import "./contact.css";
 
 export const metadata = {
@@ -30,6 +31,20 @@ export default function ContactPage() {
             need locks fitted too we&apos;ll follow up within one business
             day.
           </p>
+          <a
+            href={waLink(
+              "Hi WoodLand! I'd like a quote.\n\n1. Door size:\n2. Quantity:\n3. Preferred design:\n4. City:"
+            )}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-wa"
+            style={{ marginTop: "30px" }}
+          >
+            <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+              <path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.25.62 4.44 1.8 6.36L3.5 29l7.8-2.24a11.98 11.98 0 0 0 4.72.96h.01c6.62 0 12.02-5.4 12.02-12.02C28.05 8.4 22.65 3 16.02 3zm0 21.9h-.01a9.9 9.9 0 0 1-5.05-1.38l-.36-.22-4.63 1.33 1.36-4.51-.24-.37a9.86 9.86 0 0 1-1.53-5.24C5.56 9.5 10.28 4.8 16.02 4.8c5.74 0 10.44 4.7 10.44 10.44 0 5.75-4.7 10.44-10.44 10.44v.02z" />
+            </svg>
+            Get a Quote on WhatsApp
+          </a>
         </div>
       </section>
 
@@ -39,21 +54,20 @@ export default function ContactPage() {
             <div data-reveal>
               <div className="info-block">
                 <h5>Showroom</h5>
-                <p>
-                  Opposit Gate No.4 - DHA Phase 2, GT Road,
-                  <br />
-                  Islamabad, Pakistan
-                </p>
+                <p>{SITE.address}</p>
               </div>
               <div className="info-block">
                 <h5>Reach Us</h5>
-                <a href="mailto:sales@woodland.pk">sales@woodland.pk</a>
-                <a href="tel:+925112345678">+92 51 123 45678</a>
+                <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
+                <a href={`tel:${SITE.whatsappNumber}`}>{SITE.phoneDisplay}</a>
+                <a href={waLink("Hi WoodLand! I'd like to ask about your doors.")} target="_blank" rel="noopener noreferrer">
+                  WhatsApp us
+                </a>
               </div>
               <div className="info-block">
                 <h5>Hours</h5>
                 <p>
-                  Monday - Saturday, 10am - 7pm
+                  {SITE.hours}
                   <br />
                   Site visits available on request
                 </p>
@@ -61,7 +75,7 @@ export default function ContactPage() {
               <div className="info-block">
                 <h5>Follow</h5>
                 <a href="#">Instagram</a>
-                <a href="#">Facebook</a>
+                <a href="#">LinkedIn</a>
               </div>
             </div>
 

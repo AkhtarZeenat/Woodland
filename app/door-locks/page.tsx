@@ -1,6 +1,7 @@
 import Loader from "@/components/Loader";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import { waLink } from "@/lib/site";
 import "./door-locks.css";
 
 export const metadata = {
@@ -30,7 +31,7 @@ export default function DoorLocksPage() {
           </h1>
           <p className="kicker">
             A door is only as secure as what closes it. We supply and fit
-            locking hardware matched to every WoodLand door and most
+            locking hardware matched to every WoodLand door — and most
             existing ones too.
           </p>
         </div>
@@ -51,7 +52,7 @@ export default function DoorLocksPage() {
                 <h3 className="serif">Mortise &amp; Cylindrical Locksets</h3>
                 <p>
                   Heavy-duty mortise and cylindrical locks for entrance,
-                  bedroom, and commercial doors supplied in a range of
+                  bedroom, and commercial doors — supplied in a range of
                   finishes to match your hardware.
                 </p>
               </div>
@@ -83,7 +84,7 @@ export default function DoorLocksPage() {
                 <span className="tag">Hardware</span>
                 <h3 className="serif">Handles, Hinges &amp; Closers</h3>
                 <p>
-                  Matched handle sets, heavy-duty hinges, and door closers
+                  Matched handle sets, heavy-duty hinges, and door closers —
                   finished to complement your chosen door panel.
                 </p>
               </div>
@@ -100,7 +101,7 @@ export default function DoorLocksPage() {
                 <h3 className="serif">Installation &amp; Maintenance</h3>
                 <p>
                   On-site fitting by our own technicians, plus after-sales
-                  repair and replacement for both new WoodLand doors and
+                  repair and replacement — for both new WoodLand doors and
                   existing ones.
                 </p>
               </div>
@@ -119,11 +120,11 @@ export default function DoorLocksPage() {
               From consultation to fitted lock
             </h2>
           </div>
-          <div className="process" data-reveal>
+          <div className="process stagger-grid">
             <div className="process-step">
               <h4>Consultation</h4>
               <p>
-                Tell us your door type and security needs. We recommend the
+                Tell us your door type and security needs — we recommend the
                 right lock system.
               </p>
             </div>
@@ -172,7 +173,7 @@ export default function DoorLocksPage() {
                 }}
               >
                 Buying your door and lock from the same place means the
-                hardware is pre-matched to the panel thickness and frame, no
+                hardware is pre-matched to the panel thickness and frame — no
                 last-minute compatibility issues on install day.
               </p>
               <p
@@ -187,9 +188,22 @@ export default function DoorLocksPage() {
                 that&apos;s a squeaky hinge or a lock that needs re-coding
                 two years down the line.
               </p>
-              <a href="/contact" className="btn">
-                Book a site visit
-              </a>
+              <div className="product-cta-row">
+                <a
+                  href={waLink("Hi WoodLand! I'd like to book a site visit for door lock installation.")}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-wa"
+                >
+                  <svg viewBox="0 0 32 32" fill="currentColor" aria-hidden="true">
+                    <path d="M16.02 3C9.4 3 4 8.4 4 15.02c0 2.25.62 4.44 1.8 6.36L3.5 29l7.8-2.24a11.98 11.98 0 0 0 4.72.96h.01c6.62 0 12.02-5.4 12.02-12.02C28.05 8.4 22.65 3 16.02 3zm0 21.9h-.01a9.9 9.9 0 0 1-5.05-1.38l-.36-.22-4.63 1.33 1.36-4.51-.24-.37a9.86 9.86 0 0 1-1.53-5.24C5.56 9.5 10.28 4.8 16.02 4.8c5.74 0 10.44 4.7 10.44 10.44 0 5.75-4.7 10.44-10.44 10.44v.02z" />
+                  </svg>
+                  Book on WhatsApp
+                </a>
+                <a href="/contact" className="btn">
+                  Book a site visit
+                </a>
+              </div>
             </div>
           </div>
         </div>
