@@ -534,7 +534,7 @@ export default function HomePage() {
           <div className="space-grid stagger-grid">
             <div className="space-card img-reveal">
               <img
-                src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?q=80&w=800"
+                src="1.jpeg"
                 alt="Bedroom door installation"
               />
 
@@ -546,7 +546,7 @@ export default function HomePage() {
 
             <div className="space-card img-reveal">
               <img
-                src="https://images.unsplash.com/photo-1605883705077-8d3d3cebe78c?q=80&w=800"
+                src="2.jpeg"
                 alt="Villa door installation"
               />
 
@@ -558,7 +558,7 @@ export default function HomePage() {
 
             <div className="space-card img-reveal">
               <img
-                src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?q=80&w=800"
+                src="3.jpeg"
                 alt="Office door installation"
               />
 
@@ -570,7 +570,7 @@ export default function HomePage() {
 
             <div className="space-card img-reveal">
               <img
-                src="https://images.unsplash.com/photo-1779727279604-19ebb58b8b83?q=80&w=800"
+                src="4.jpeg"
                 alt="Hotel corridor door installation"
               />
 
@@ -582,7 +582,7 @@ export default function HomePage() {
 
             <div className="space-card img-reveal">
               <img
-                src="https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=800"
+                src="5.jpeg"
                 alt="Apartment door installation"
               />
 
