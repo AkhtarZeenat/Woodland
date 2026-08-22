@@ -52,13 +52,15 @@ export default function HomePage() {
           <span className="hero-eyebrow" id="heroEyebrow">
             PET · PPH · CCP
           </span>
-
+          <p className="hero-title serif"  style={{ fontSize: "36px", lineHeight: 1.8, color: "var(--brown-900)" }} id="heroTitle">
+           <em>Doors, Refined</em>
+          </p>
           <h1 className="hero-title serif" id="heroTitle">
-            Engineered Doors, <em>Made for Pakistan</em>.
+            Engineered Doors, Made for Pakistan.
           </h1>
 
           <p className="hero-sub" id="heroSub">
-            Water-resistant · Termite-resistant · Low maintenance. Built so
+            Water-resistant, Termite-resistant, Low maintenance. Built so
             you never have to think about your door again.
           </p>
 
@@ -105,16 +107,6 @@ export default function HomePage() {
           <div className="door-backdrop">
             <img src="/hero.png" alt="Modern entrance" />
           </div>
-
-          {/* <div className="door-stage" id="doorStage">
-            <div className="door-leaf left">
-              <img src="/transition.png" alt="WoodLand door leaf" />
-            </div>
-
-            <div className="door-leaf right">
-              <img src="/transition.png" alt="WoodLand door leaf" />
-            </div>
-          </div> */}
 
           <div className="hero-right-tag" id="heroTag">
             <div className="code">LB2601-15-122</div>
@@ -275,6 +267,7 @@ export default function HomePage() {
         <img
           src="/4.jpeg"
           alt="WoodLand engineered door"
+          style={{ width: "100%", aspectRatio: "4/5" }}
         />
 
         <div className="why-door-badge">
