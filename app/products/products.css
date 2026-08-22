@@ -48,7 +48,6 @@
 .product-features li:last-child{ border-bottom:none; }
 .product-features li::before{ content:'—'; color:var(--brass); flex-shrink:0; }
 
-.product-cta-row{ display:flex; align-items:center; gap:28px; flex-wrap:wrap; }
 
 .product-note{
     margin-top:60px; padding:22px 26px; background:var(--bg-soft); border-left:2px solid var(--brass);

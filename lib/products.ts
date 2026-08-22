@@ -733,3 +733,15 @@ export function getRelatedProducts(product: Product, limit = 3): Product[] {
     .filter((p) => p.category === product.category && p.slug !== product.slug)
     .slice(0, limit);
 }
+
+/** Category-level info that doesn't vary per SKU — used on product pages
+ * and the specs/performance table. Matches the Performance table shown
+ * on the homepage. */
+export const categoryInfo: Record<
+  ProductCategory,
+  { recommendedFor: string; scratchResistant: boolean }
+> = {
+  pet: { recommendedFor: "Bathrooms, kitchens & wet areas", scratchResistant: false },
+  pph: { recommendedFor: "Bedrooms, living areas & everyday residential use", scratchResistant: true },
+  ccp: { recommendedFor: "Premium interiors, villas & commercial spaces", scratchResistant: true },
+};
