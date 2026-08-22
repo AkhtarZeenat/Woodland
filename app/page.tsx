@@ -1,3 +1,4 @@
+"use client";
 import Loader from "@/components/Loader";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
@@ -6,6 +7,7 @@ import ScrollAnimations from "@/components/ScrollAnimations";
 import { getProductBySlug } from "@/lib/products";
 import { waLink } from "@/lib/site";
 import "./home.css";
+import { useEffect, useState } from "react";
 
 const sectionHeadingStyle = {
   textAlign: "center" as const,
@@ -38,6 +40,24 @@ export default function HomePage() {
     .filter(Boolean) as NonNullable<
     ReturnType<typeof getProductBySlug>
   >[];
+  const heroImages = [
+  "/hero.png",
+  "/1.jpeg",
+  "/2.jpeg",
+  "/3.jpeg",
+  "/4.jpeg",
+  "/5.jpeg",
+];
+
+const [heroIndex, setHeroIndex] = useState(0);
+
+useEffect(() => {
+  const interval = setInterval(() => {
+    setHeroIndex((prev) => (prev + 1) % heroImages.length);
+  }, 3500);
+
+  return () => clearInterval(interval);
+}, []);
 
   return (
     <>
@@ -103,16 +123,97 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="hero-right">
-          <div className="door-backdrop">
-            <img src="/hero.png" alt="Modern entrance" />
-          </div>
+        <div
+  className="hero-right"
+  style={{
+    position: "relative",
+    overflow: "hidden",
+  }}
+>
+  <div
+    className="door-backdrop"
+    style={{
+      position: "relative",
+      width: "100%",
+      height: "100%",
+      minHeight: "560px",
+      overflow: "hidden",
+      borderRadius: "2px",
+    }}
+  >
+    {heroImages.map((image, index) => (
+      <img
+        key={image}
+        src={image}
+        alt={`WoodLand engineered door ${index + 1}`}
+        style={{
+          position: "absolute",
+          inset: 0,
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          objectPosition: "center",
+          opacity: heroIndex === index ? 1 : 0,
+          transform:
+            heroIndex === index
+              ? "scale(1)"
+              : "scale(1.04)",
+          transition:
+            "opacity 1.2s ease-in-out, transform 3.5s ease-in-out",
+          zIndex: heroIndex === index ? 2 : 1,
+        }}
+      />
+    ))}
 
-          <div className="hero-right-tag" id="heroTag">
-            <div className="code">LB2601-15-122</div>
-            <div className="name serif">Polypropylene Homopolymer</div>
-          </div>
-        </div>
+    {/* Carousel indicators */}
+    <div
+      style={{
+        position: "absolute",
+        bottom: "22px",
+        left: "50%",
+        transform: "translateX(-50%)",
+        display: "flex",
+        alignItems: "center",
+        gap: "7px",
+        zIndex: 10,
+        padding: "8px 12px",
+        borderRadius: "30px",
+        background: "rgba(20, 20, 15, 0.45)",
+        backdropFilter: "blur(8px)",
+      }}
+    >
+      {heroImages.map((_, index) => (
+        <button
+          key={index}
+          type="button"
+          onClick={() => setHeroIndex(index)}
+          aria-label={`Show door image ${index + 1}`}
+          style={{
+            width: heroIndex === index ? "24px" : "7px",
+            height: "7px",
+            padding: 0,
+            border: "none",
+            borderRadius: "20px",
+            background:
+              heroIndex === index
+                ? "var(--ivory-light)"
+                : "rgba(255,255,255,0.45)",
+            cursor: "pointer",
+            transition: "all 0.35s ease",
+          }}
+        />
+      ))}
+    </div>
+  </div>
+
+  {/* <div className="hero-right-tag" id="heroTag">
+    <div className="code">LB2601-15-122</div>
+
+    <div className="name serif">
+      Polypropylene Homopolymer
+    </div>
+  </div> */}
+</div>
       </section>
 
       {/* =====================================================
